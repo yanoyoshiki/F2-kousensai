@@ -3,5 +3,5 @@ ex)
 """
 20220612(year/month/day)
 
-print debug(description of your action)
+print debug "how!"(description of your action)
 """
