@@ -421,6 +421,7 @@ GameObject:
   - component: {fileID: 579427460}
   - component: {fileID: 579427462}
   - component: {fileID: 579427461}
+  - component: {fileID: 579427463}
   m_Layer: 6
   m_Name: Player
   m_TagString: Untagged
@@ -477,6 +478,37 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &579427463
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 579427459}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1001bdc5b91d41479b439d68e7d11b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  axleInfos:
+  - leftWheel: {fileID: 1623923038}
+    rightWheel: {fileID: 1183095622}
+    motor: 1
+    steering: 1
+  - leftWheel: {fileID: 1943029304}
+    rightWheel: {fileID: 2017153782}
+    motor: 1
+    steering: 0
+  maxMotorTorque: 400
+  maxSteeringAngle: 30
+  wheelFL: {fileID: 1623923038}
+  wheelFR: {fileID: 1183095622}
+  wheelBL: {fileID: 1943029304}
+  wheelBR: {fileID: 2017153782}
+  wheelFLTrans: {fileID: 1231699953}
+  wheelFRTrans: {fileID: 1231699952}
+  wheelBLTrans: {fileID: 1231699951}
+  wheelBRTrans: {fileID: 1231699950}
 --- !u!1 &805433327
 GameObject:
   m_ObjectHideFlags: 0
@@ -668,6 +700,26 @@ PrefabInstance:
 --- !u!4 &1231699949 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3815435553298920706, guid: a9cbfe7195f75844aa7ec0619ca7616f, type: 3}
+  m_PrefabInstance: {fileID: 1231699948}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1231699950 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1308699489893279623, guid: a9cbfe7195f75844aa7ec0619ca7616f, type: 3}
+  m_PrefabInstance: {fileID: 1231699948}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1231699951 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7910658938632702116, guid: a9cbfe7195f75844aa7ec0619ca7616f, type: 3}
+  m_PrefabInstance: {fileID: 1231699948}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1231699952 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2262421052107882936, guid: a9cbfe7195f75844aa7ec0619ca7616f, type: 3}
+  m_PrefabInstance: {fileID: 1231699948}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1231699953 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2803124539532601224, guid: a9cbfe7195f75844aa7ec0619ca7616f, type: 3}
   m_PrefabInstance: {fileID: 1231699948}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1623923036
