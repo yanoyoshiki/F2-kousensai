@@ -30,8 +30,13 @@ public class carScript : MonoBehaviour
     float steering = 0.0f;
     float motor = 0.0f;
 
+    public Vector3 com; //重心の位置
+    public Rigidbody rb;
+
     void Start()
     {
+        rb = GetComponent<Rigidbody>();
+        rb.centerOfMass = com; //重心の位置
     }
 
     // Update is called once per frame
