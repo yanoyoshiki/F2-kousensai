@@ -13,7 +13,6 @@ public class AxleInfo
 
 public class carScript : MonoBehaviour
 {
-
     public List<AxleInfo> axleInfos; // 個々の車軸の情報
     public float maxMotorTorque; //ホイールに適用可能な最大トルク
     public float maxSteeringAngle; // 適用可能な最大ハンドル角度
@@ -59,6 +58,18 @@ public class carScript : MonoBehaviour
     {
         motor = maxMotorTorque * Input.GetAxis("Vertical");
         steering = maxSteeringAngle * Input.GetAxis("Horizontal");
+
+        
+
+        /*if (Input.GetKey(KeyCode.W) == true)
+        {
+            rb.AddForce(transform.forward * maxMotorTorque, ForceMode.Force);
+        }
+
+        if (Input.GetKey(KeyCode.S) == true)
+        {
+            rb.AddForce(-transform.forward * maxMotorTorque, ForceMode.Force);
+        }*/
 
         foreach (AxleInfo axleInfo in axleInfos)
         {

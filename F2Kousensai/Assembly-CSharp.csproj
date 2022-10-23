@@ -59,6 +59,8 @@
     <Compile Include="Assets\HORI\Asset\race-track-lake\Standard Assets\Environment\Water (Basic)\Scripts\WaterBasic.cs" />
     <Compile Include="Assets\HORI\Script\PlayerController.cs" />
     <Compile Include="Assets\HORI\Script\carScript.cs" />
+    <Compile Include="Assets\HORI\Script\GoalControl.cs" />
+    <Compile Include="Assets\HORI\Script\RoadControl.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\HORI\Asset\race-track-lake\readmore.txt" />
