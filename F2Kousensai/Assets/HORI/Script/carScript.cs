@@ -2,6 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//https://jps-code.com/unity_car
+//参考にしたサイト
+
 [System.Serializable]
 public class AxleInfo
 {
@@ -38,6 +41,14 @@ public class carScript : MonoBehaviour
         rb.centerOfMass = com; //重心の位置
     }
 
+    public float SpeedCheck()
+    {
+        rb = GetComponent<Rigidbody>();
+        float velocity = rb.velocity.magnitude;
+        float speed = velocity * 3600 / 1000;
+        return speed;
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -63,7 +74,8 @@ public class carScript : MonoBehaviour
 
         /*if (Input.GetKey(KeyCode.W) == true)
         {
-            rb.AddForce(transform.forward * maxMotorTorque, ForceMode.Force);
+            Debug.Log("A");
+            rb.AddForce(transform.forward * 30000f, ForceMode.Force);
         }
 
         if (Input.GetKey(KeyCode.S) == true)
