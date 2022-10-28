@@ -56,15 +56,26 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\HORI\Asset\RankingAssets\Scripts\Game.cs" />
     <Compile Include="Assets\HORI\Asset\race-track-lake\Standard Assets\Environment\Water (Basic)\Scripts\WaterBasic.cs" />
+    <Compile Include="Assets\HORI\Asset\RankingAssets\Scripts\Car.cs" />
     <Compile Include="Assets\HORI\Script\PlayerController.cs" />
     <Compile Include="Assets\HORI\Script\RoadControl.cs" />
-    <Compile Include="Assets\HORI\Script\carScript.cs" />
-    <Compile Include="Assets\HORI\Script\GoalControl.cs" />
+    <Compile Include="Assets\HORI\Script\RankChecker.cs" />
     <Compile Include="Assets\HORI\Script\OutputCarSpeed.cs" />
+    <Compile Include="Assets\HORI\Script\carScript.cs" />
+    <Compile Include="Assets\HORI\Asset\RankingAssets\Scripts\CheckPoint.cs" />
+    <Compile Include="Assets\HORI\Script\LapTimer.cs" />
+    <Compile Include="Assets\HORI\Script\GoalControl.cs" />
+    <Compile Include="Assets\HORI\Script\FlagManager.cs" />
+    <Compile Include="Assets\HORI\Script\ChangeScene.cs" />
+    <Compile Include="Assets\HORI\Script\DetermineNumber.cs" />
+    <Compile Include="Assets\HORI\Script\CarInstance.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\HORI\Asset\race-track-lake\readmore.txt" />
+    <None Include="Assets\HORI\Asset\BrokenVector\LowPolyShaders\Shaders\LowPolyUnlitShader.shader" />
+    <None Include="Assets\HORI\Asset\BrokenVector\LowPolyShaders\Shaders\LowPolyPBRShader.shader" />
     <None Include="Assets\HORI\Asset\race-track-lake\Standard Assets\Environment\Water (Basic)\Shaders\FXWaterBasic.shader" />
   </ItemGroup>
   <ItemGroup>
