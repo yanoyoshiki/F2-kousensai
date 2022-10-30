@@ -57,6 +57,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\HORI\Asset\RankingAssets\Scripts\Game.cs" />
+    <Compile Include="Assets\HORI\Script\DetermineNumber.cs" />
+    <Compile Include="Assets\HORI\Script\FlagManager.cs" />
     <Compile Include="Assets\HORI\Asset\race-track-lake\Standard Assets\Environment\Water (Basic)\Scripts\WaterBasic.cs" />
     <Compile Include="Assets\HORI\Asset\RankingAssets\Scripts\Car.cs" />
     <Compile Include="Assets\HORI\Script\PlayerController.cs" />
@@ -64,13 +66,13 @@
     <Compile Include="Assets\HORI\Script\RankChecker.cs" />
     <Compile Include="Assets\HORI\Script\OutputCarSpeed.cs" />
     <Compile Include="Assets\HORI\Script\carScript.cs" />
-    <Compile Include="Assets\HORI\Asset\RankingAssets\Scripts\CheckPoint.cs" />
-    <Compile Include="Assets\HORI\Script\LapTimer.cs" />
-    <Compile Include="Assets\HORI\Script\GoalControl.cs" />
-    <Compile Include="Assets\HORI\Script\FlagManager.cs" />
-    <Compile Include="Assets\HORI\Script\ChangeScene.cs" />
-    <Compile Include="Assets\HORI\Script\DetermineNumber.cs" />
     <Compile Include="Assets\HORI\Script\CarInstance.cs" />
+    <Compile Include="Assets\HORI\Asset\RankingAssets\Scripts\CheckPoint.cs" />
+    <Compile Include="Assets\HORI\Script\ChangeScene.cs" />
+    <Compile Include="Assets\HORI\Script\GoalControl.cs" />
+    <Compile Include="Assets\HORI\Script\AutoCarScript.cs" />
+    <Compile Include="Assets\HORI\Script\GameStartScript.cs" />
+    <Compile Include="Assets\HORI\Script\GameManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\HORI\Asset\race-track-lake\readmore.txt" />

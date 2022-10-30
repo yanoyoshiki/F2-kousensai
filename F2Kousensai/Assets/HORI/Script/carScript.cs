@@ -35,10 +35,23 @@ public class carScript : MonoBehaviour
     public Vector3 com; //重心の位置
     public Rigidbody rb;
 
+
+    private IEnumerator Inoperable(float i) // 操作を不能にする（引数の秒数間）
+    {
+        Debug.Log("X");
+        carScript inputScript = this;
+        inputScript.enabled = false; // スクリプトを無効化
+        yield return new WaitForSeconds(i); // 引数の秒数だけ待つ
+        inputScript.enabled = true; // スクリプトを有効化
+        yield break;
+    }
+
+
     void Start()
     {
         rb = GetComponent<Rigidbody>();
         rb.centerOfMass = com; //重心の位置
+        StartCoroutine("Inoperable", 5f); // ５秒処理停止
     }
 
     public float SpeedCheck()
@@ -69,19 +82,6 @@ public class carScript : MonoBehaviour
     {
         motor = maxMotorTorque * Input.GetAxis("Vertical");
         steering = maxSteeringAngle * Input.GetAxis("Horizontal");
-
-        
-
-        /*if (Input.GetKey(KeyCode.W) == true)
-        {
-            Debug.Log("A");
-            rb.AddForce(transform.forward * 30000f, ForceMode.Force);
-        }
-
-        if (Input.GetKey(KeyCode.S) == true)
-        {
-            rb.AddForce(-transform.forward * maxMotorTorque, ForceMode.Force);
-        }*/
 
         foreach (AxleInfo axleInfo in axleInfos)
         {

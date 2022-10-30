@@ -5,12 +5,16 @@ using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
-    float lap = 0; //現在の周回数
-    float road = 0; //チェックポイントを通過したか
+    static public float lap = 0; //現在の周回数
+    static public float road = 0; //チェックポイントを通過したか
 
-    public GameObject LapObject;
+    [SerializeField]
+    public Text lap_text;
+
+    //public GameObject LapTextObject = null; // Textオブジェクト
 
     float time = 0;
+    public static PlayerController instance;
 
     bool start = false;
 
@@ -42,6 +46,16 @@ public class PlayerController : MonoBehaviour
     float flag12 = 1;
     float flag23 = 1;
 
+    private IEnumerator Inoperable(float i) // 操作を不能にする（引数の秒数間）
+    {
+        Debug.Log("Y");
+        PlayerController inputScript = this;
+        inputScript.enabled = false; // スクリプトを無効化
+        yield return new WaitForSeconds(i); // 引数の秒数だけ待つ
+        inputScript.enabled = true; // スクリプトを有効化
+        yield break;
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -50,6 +64,8 @@ public class PlayerController : MonoBehaviour
         oldSeconds = 0f;
         Lapminute = 0;
         Lapseconds = 0;
+        //this.lap_text = GameObject.Find("LapNumberText").GetComponent<Text>();
+        StartCoroutine("Inoperable", 5f); // ５秒処理停止
     }
 
     // Update is called once per frame
@@ -104,74 +120,10 @@ public class PlayerController : MonoBehaviour
         }
 
     }
-    public void RaceStart()
-    {
-        start = true;
-    }
-
-    void timer()
-    {
-        seconds += Time.deltaTime;
-        if (seconds >= 60f)
-        {
-            minute++;
-            seconds = seconds - 60;
-        }
-
-        Lapseconds += Time.deltaTime;
-        if (Lapseconds >= 60f)
-        {
-            Lapminute++;
-            Lapseconds = seconds - 60;
-        }
-
-        seconds += Time.deltaTime;
-        if (seconds >= 60f)
-        {
-            minute++;
-            seconds = seconds - 60;
-        }
-
-        Lapseconds += Time.deltaTime;
-        if (Lapseconds >= 60f)
-        {
-            Lapminute++;
-            Lapseconds = Lapseconds - 60;
-        }
-        if (lap != 4)
-        {
-            TotalTimeText.text = TotalText + minute.ToString("00") + ":" + ((int)seconds).ToString("00");
-        }
-
-        if (lap == 0 || lap == 1)
-        {
-            TimeText01.text = Lap1Text + minute.ToString("00") + ":" + ((int)seconds).ToString("00");
-        }
-        else if (lap == 2)
-        {
-            if (flag12 == 1)
-            {
-                Lapseconds = 0;
-                Lapminute = 0;
-                flag12 = 0;
-            }
-            TimeText02.text = Lap2Text + Lapminute.ToString("00") + ":" + ((int)Lapseconds).ToString("00");
-        }
-        else if (lap == 3)
-        {
-            if (flag23 == 1)
-            {
-                Lapseconds = 0;
-                Lapminute = 0;
-                flag23 = 0;
-            }
-            TimeText03.text = Lap3Text + Lapminute.ToString("00") + ":" + ((int)Lapseconds).ToString("00");
-        }
-    }
 
     public void RoadNum()
     {
-        
+        Debug.Log("road:" + road);
         if (road == 0)
         {
             Debug.Log("一周目チェックポイント");
@@ -192,18 +144,23 @@ public class PlayerController : MonoBehaviour
 
     public void LapNum()
     {
-        Text lap_text = LapObject.GetComponent<Text>();
+        //Text lap_text = LapTextObject.GetComponent<Text>();
+        Debug.Log("lap:"+lap);
         if (lap == 0)
         {
             Debug.Log("一周目");
             lap++;
             lap_text.text = "1/3";
+            Debug.Log(lap);
+            Debug.Log(road);
         }
         else if (lap == 1 && road == 1)
         {
             Debug.Log("二周目");
             lap++;
             lap_text.text = "2/3";
+            Debug.Log(lap);
+            Debug.Log(road);
         }
         else if (lap == 2 && road == 2)
         {

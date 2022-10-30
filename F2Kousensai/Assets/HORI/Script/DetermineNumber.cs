@@ -43,7 +43,7 @@ public class DetermineNumber : MonoBehaviour
         }
         else if (Input.GetKeyDown(KeyCode.S))
         {
-            if (NPC != 1)
+            if (NPC != 0)
                 NPC--;
             NPCNumText.text = "NPCÇÃêîÅF" + NPC.ToString();
         }
