@@ -12,13 +12,13 @@ public class RankChecker : MonoBehaviour
     int phase = 0;
 
     [SerializeField]
-    int count = 8;
+    int count = 4;
 
     [SerializeField]
     GameObject carPrefab;
 
-    [SerializeField]
-    Camera closeUpCamera;
+    //[SerializeField]
+    //Camera closeUpCamera;
 
     void Update()
     {
@@ -28,7 +28,7 @@ public class RankChecker : MonoBehaviour
 
             for (int i = 0; i < count; i++)
             {
-                var car = Instantiate<GameObject>(carPrefab).GetComponent<Car>(); //車生成　なくていけるやつやけど、CPU生成に使うかも
+                var car = Instantiate<GameObject>(carPrefab).GetComponent<Car>(); //車生成　なくていけるやつ
 
                 carList.Add(car); //順位を確認するためのリストに生成した車を放りこんでる
 
@@ -56,16 +56,16 @@ public class RankChecker : MonoBehaviour
             }
 
             //クローズアップカメラ
-            closeUpCamera.transform.position = carList[0].transform.position - Camera.main.transform.forward * 8.0f;
-            closeUpCamera.transform.rotation = Camera.main.transform.rotation;
+            //closeUpCamera.transform.position = carList[0].transform.position - Camera.main.transform.forward * 8.0f;
+            //closeUpCamera.transform.rotation = Camera.main.transform.rotation;
         }
     }
 
-    private void OnGUI()
+    /*private void OnGUI()
     {
         if (GUILayout.Button("逆走"))
         {
             Car.revertFlag = !Car.revertFlag;
         }
-    }
+    }*/
 }

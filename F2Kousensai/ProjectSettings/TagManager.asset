@@ -6,6 +6,10 @@ TagManager:
   tags:
   - Player1
   - PlayerCamera
+  - Player2
+  - NPC
+  - Player3
+  - Player4
   layers:
   - Default
   - TransparentFX

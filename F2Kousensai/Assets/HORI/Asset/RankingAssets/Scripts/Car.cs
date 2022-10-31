@@ -29,7 +29,7 @@ public class Car : MonoBehaviour
 
     //最高・最低速度
     float minSpeed = 1.0f * 1000f / 60f;
-    float maxSpeed = 10.0f * 1000f / 60f;
+    float maxSpeed = 5.0f * 1000f / 60f;
 
     float nextSpeedChangeTime;
     float nextRotChangeTime;
@@ -73,7 +73,7 @@ public class Car : MonoBehaviour
         v = v.normalized * Time.deltaTime * speed;
 
         //進行方向をすこし揺らす
-        v = turnRot * v;
+        //v = turnRot * v;
         var p1 = p0 + v;
 
         transform.position = p1;
