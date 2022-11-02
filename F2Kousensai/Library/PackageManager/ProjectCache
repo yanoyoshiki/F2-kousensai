@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637924413511960542
-    m_Hash: 3841823420
+      ticks: 638029046362282069
+    m_Hash: 210130073
   m_LockFileStatus:
     m_FilePath: C:/Users/TIGA/Documents/GitHub/F2-kousensai/F2Kousensai/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637924413653792028
-    m_Hash: 3065126310
+      ticks: 638029046362282069
+    m_Hash: 2750229563
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_PackageAssets:
@@ -92,6 +92,8 @@ m_PackageAssets:
         - 1.15.18
         - 1.17.0
         - 1.17.1
+        - 1.17.2
+        - 1.17.6
         - 2.0.0-preview.6
         - 2.0.0-preview.8
         - 2.0.0-preview.15
@@ -109,6 +111,8 @@ m_PackageAssets:
         - 1.15.18
         - 1.17.0
         - 1.17.1
+        - 1.17.2
+        - 1.17.6
         - 2.0.0-preview.6
         - 2.0.0-preview.8
         - 2.0.0-preview.15
@@ -215,6 +219,7 @@ m_PackageAssets:
         - 3.0.13
         - 3.0.14
         - 3.0.15
+        - 3.0.16
         compatible:
         - 1.0.2
         - 1.0.6
@@ -247,6 +252,7 @@ m_PackageAssets:
         - 3.0.13
         - 3.0.14
         - 3.0.15
+        - 3.0.16
         verified: 2.0.7
       dependencies:
       - name: com.unity.test-framework
@@ -502,15 +508,19 @@ m_PackageAssets:
         - 1.1.29
         - 1.1.30
         - 1.1.31
+        - 1.1.33
+        - 1.3.0
         - 2.0.1-exp.1
         - 2.0.1-pre.12
         - 2.0.1-pre.18
         compatible:
         - 1.1.31
+        - 1.1.33
+        - 1.3.0
         - 2.0.1-exp.1
         - 2.0.1-pre.12
         - 2.0.1-pre.18
-        verified: 1.1.31
+        verified: 1.1.33
       dependencies:
       - name: com.unity.ext.nunit
         version: 1.0.6
@@ -807,6 +817,7 @@ m_PackageAssets:
         - 1.7.0-pre.2
         - 1.7.0
         - 1.7.1
+        - 1.7.2
         compatible:
         - 1.4.8
         - 1.5.0-pre.2
@@ -835,6 +846,7 @@ m_PackageAssets:
         - 1.7.0-pre.2
         - 1.7.0
         - 1.7.1
+        - 1.7.2
         verified: 1.4.8
       dependencies:
       - name: com.unity.modules.director
@@ -2788,6 +2800,8 @@ m_PackageAssets:
         - 1.4.0
         - 1.4.1
         - 1.4.2
+        - 1.4.3
+        - 1.5.2
         compatible:
         - 1.0.1
         - 1.1.0-pre.7
@@ -2803,6 +2817,8 @@ m_PackageAssets:
         - 1.4.0
         - 1.4.1
         - 1.4.2
+        - 1.4.3
+        - 1.5.2
         verified: 1.0.1
       dependencies:
       - name: com.unity.modules.unitywebrequest

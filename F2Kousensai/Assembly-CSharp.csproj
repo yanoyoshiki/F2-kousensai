@@ -58,6 +58,7 @@
   <ItemGroup>
     <Compile Include="Assets\HORI\Asset\RankingAssets\Scripts\Game.cs" />
     <Compile Include="Assets\HORI\Script\GameManager.cs" />
+    <Compile Include="Assets\HORI\Script\Player\CarAudio.cs" />
     <Compile Include="Assets\HORI\Script\Player\GameStartScript.cs" />
     <Compile Include="Assets\HORI\Script\Player\carScript2.cs" />
     <Compile Include="Assets\HORI\Script\DetermineNumber.cs" />
@@ -65,28 +66,30 @@
     <Compile Include="Assets\HORI\Script\FlagManager.cs" />
     <Compile Include="Assets\HORI\Asset\race-track-lake\Standard Assets\Environment\Water (Basic)\Scripts\WaterBasic.cs" />
     <Compile Include="Assets\HORI\Asset\RankingAssets\Scripts\Car.cs" />
+    <Compile Include="Assets\HORI\Script\Player\carScript3.cs" />
     <Compile Include="Assets\HORI\Script\SelfDrivingScript.cs" />
     <Compile Include="Assets\HORI\Script\Player\GameStartNPC1.cs" />
+    <Compile Include="Assets\HORI\Script\Player\OutputCarSpeed3.cs" />
     <Compile Include="Assets\HORI\Script\Player\PlayerController.cs" />
     <Compile Include="Assets\HORI\Script\RoadControl.cs" />
     <Compile Include="Assets\HORI\Script\AutoCarScript.cs" />
+    <Compile Include="Assets\HORI\Script\Player\carScript4.cs" />
     <Compile Include="Assets\HORI\Script\RankChecker.cs" />
     <Compile Include="Assets\HORI\Script\Player\OutputCarSpeed.cs" />
     <Compile Include="Assets\HORI\Script\Player\carScript.cs" />
+    <Compile Include="Assets\HORI\Script\Player\GameStart4.cs" />
     <Compile Include="Assets\HORI\Script\NPCSpeedCheck.cs" />
     <Compile Include="Assets\HORI\Script\CarInstance.cs" />
     <Compile Include="Assets\HORI\Script\RankAlgorithm.cs" />
-    <Compile Include="Assets\HORI\Asset\RankingAssets\Scripts\CheckPoint.cs" />
+    <Compile Include="Assets\HORI\Script\CheckPoint.cs" />
+    <Compile Include="Assets\HORI\Script\Player\GameStart3.cs" />
+    <Compile Include="Assets\HORI\Script\Player\OutputCarSpeed4.cs" />
     <Compile Include="Assets\HORI\Script\Player\GameStart2.cs" />
     <Compile Include="Assets\HORI\Script\Player\OutputCarSpeed2.cs" />
     <Compile Include="Assets\HORI\Script\ChangeScene.cs" />
     <Compile Include="Assets\HORI\Script\GoalControl.cs" />
-    <Compile Include="Assets\HORI\Script\Player\carScript3.cs" />
-    <Compile Include="Assets\HORI\Script\Player\GameStart3.cs" />
-    <Compile Include="Assets\HORI\Script\Player\OutputCarSpeed3.cs" />
-    <Compile Include="Assets\HORI\Script\Player\carScript4.cs" />
-    <Compile Include="Assets\HORI\Script\Player\GameStart4.cs" />
-    <Compile Include="Assets\HORI\Script\Player\OutputCarSpeed4.cs" />
+    <Compile Include="Assets\HORI\Script\Player\RankingCheckCar1.cs" />
+    <Compile Include="Assets\HORI\Script\Player\Car2.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\HORI\Asset\race-track-lake\readmore.txt" />

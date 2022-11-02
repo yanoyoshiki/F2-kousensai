@@ -27,6 +27,7 @@ public class RoadControl : MonoBehaviour
 
         if (collider.gameObject.tag == "Player1")
         {
+            player1 = GameObject.FindWithTag("Player1");
             Debug.Log("チェック1");
             //player.LapNum();
             //PlayerController.instance.LapNum();
@@ -34,6 +35,7 @@ public class RoadControl : MonoBehaviour
         }
         else if (collider.gameObject.tag == "Player2")
         {
+            player2 = GameObject.FindWithTag("Player2");
             Debug.Log("チェック2");
             //player.LapNum();
             //PlayerController.instance.LapNum();
@@ -41,6 +43,7 @@ public class RoadControl : MonoBehaviour
         }
         else if (collider.gameObject.tag == "Player3")
         {
+            player3 = GameObject.FindWithTag("Player3");
             Debug.Log("チェック3");
             //player.LapNum();
             //PlayerController.instance.LapNum();
@@ -48,6 +51,7 @@ public class RoadControl : MonoBehaviour
         }
         else if (collider.gameObject.tag == "Player4")
         {
+            player4 = GameObject.FindWithTag("Player4");
             Debug.Log("チェック4");
             //player.LapNum();
             //PlayerController.instance.LapNum();
