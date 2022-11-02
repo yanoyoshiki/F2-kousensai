@@ -11,11 +11,7 @@ public class ColorChange : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        // mr = GetComponent<MeshRenderer>();
-        // mr = GetComponent<MeshRenderer>();
-
-        // nowPosi = this.transform.position.z;
-        // mr.material.color = mr.material.color - new Color32(0,0,0,255);
+        
     }
     // Update is called once per frame
     void Update()
@@ -38,13 +34,9 @@ public class ColorChange : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Player1"))
-        {
             other.gameObject.GetComponent<Rigidbody>().AddForce(new Vector3(10, 0, 0), ForceMode.VelocityChange);
             IEnumerator defeat = Defeat();
             StartCoroutine(defeat);
-            
-        }
     }
 
     void SetMatColor1(MeshRenderer mesh,Color col )
