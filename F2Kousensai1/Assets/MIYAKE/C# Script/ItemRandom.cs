@@ -19,7 +19,7 @@ public class ItemRandom : MonoBehaviour
     // public float nowPosi;
     // Start is called before the first frame update
 
-    public string[] a = new string[4] {"キノコ","バナナ","ショートカット","障害物"};
+    public string[] a = new string[4] {"キノコ","バナナ","障害物","ショートカット"};
     // public int r1 = UnityEngine.Random.Range(0, 2);
 
     void Start()
@@ -48,7 +48,12 @@ public class ItemRandom : MonoBehaviour
 
     public void OnTriggerEnter(Collider other)
     {
-        // int r2 = r1.Next(0, 2);     //0から1
+        // int rank;
+        // if(rank == 1){
+        //     int r1 = UnityEngine.Random.Range(0, 3);
+        // }else{
+        //     int r1 = UnityEngine.Random.Range(0, 4);
+        // }
         int r1 = UnityEngine.Random.Range(0, 4);
         IEnumerator defeat = Defeat();
         if(a[r1]=="キノコ"){
@@ -63,7 +68,7 @@ public class ItemRandom : MonoBehaviour
             Instantiate(shortcut,new Vector3(15.76f, -8.36f, -13.8f), Quaternion.Euler(-10,50,0));
         }
         else if(a[r1]=="障害物"){
-            Instantiate(Obstacle,new Vector3(17.64f, -8.19f, -6.25f), Quaternion.Euler(0,-30,0));
+            Instantiate(Obstacle,new Vector3(22.83f, -8.19f, -3.25f), Quaternion.Euler(0,-30,0));
         }
         StartCoroutine(defeat);
 
