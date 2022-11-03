@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/HORI/Scene/HORI_1.unity
     guid: 205292efe96dc224e96ea23b3249ecb7
+  - enabled: 1
+    path: Assets/ASAI/result.unity
+    guid: 704b97b9b3bf52c46acea0c185a4c214
   m_configObjects: {}

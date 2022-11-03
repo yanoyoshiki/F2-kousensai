@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -131,6 +132,7 @@ public class PlayerController : MonoBehaviour
             Debug.Log("一周目チェックポイント");
             road++;
             
+            
         }
         else if (road == 1)
         {
@@ -152,6 +154,7 @@ public class PlayerController : MonoBehaviour
         {
             Debug.Log("一周目");
             lap++;
+            SceneManager.LoadScene("result");
             lap_text.text = "1/3";
             Debug.Log(lap);
             Debug.Log(road);
@@ -161,6 +164,7 @@ public class PlayerController : MonoBehaviour
             Debug.Log("二周目");
             lap++;
             lap_text.text = "2/3";
+            
             Debug.Log(lap);
             Debug.Log(road);
         }
