@@ -5,3 +5,5 @@
 *.jpg filter=lfs diff=lfs merge=lfs -text
 *.wav filter=lfs diff=lfs merge=lfs -text
 *.ogg filter=lfs diff=lfs merge=lfs -text
+659d2b8c2cb48211198844c3a971d419 filter=lfs diff=lfs merge=lfs -text
+8cc66f0cb64dccec2f55846d4b011de1 filter=lfs diff=lfs merge=lfs -text
