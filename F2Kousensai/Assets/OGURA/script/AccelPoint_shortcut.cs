@@ -7,16 +7,18 @@ public class AccelPoint_shortcut : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        IEnumerator defeat = Defeat();
-        StartCoroutine(defeat);
+        
     }
     IEnumerator Defeat() 
     {
-        yield return new WaitForSeconds(4);
+        yield return new WaitForSeconds(1);
         Destroy (gameObject);
     }
     private void OnTriggerEnter(Collider other)
     {
         other.gameObject.GetComponent<Rigidbody>().AddRelativeForce(new Vector3(0, 0, 80), ForceMode.VelocityChange);
+        IEnumerator defeat = Defeat();
+        StartCoroutine(defeat);
     }
+    
 }

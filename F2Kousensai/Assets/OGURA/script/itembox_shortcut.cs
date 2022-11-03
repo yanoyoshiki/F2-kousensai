@@ -12,6 +12,10 @@ public class itembox_shortcut : MonoBehaviour
     public GameObject AccelPoint_shortcut;
     public GameObject AccelPoint_ogura;
     public GameObject shortcut;
+    public GameObject tunnel;
+    
+    
+
 
     // Start is called before the first frame update
     void Start()
@@ -34,9 +38,11 @@ public class itembox_shortcut : MonoBehaviour
         SetMatColor1(node_id9_3, new Color32(0,0,0,255));
         // Instantiate(AccelPoint_shortcut,new Vector3(-582.81f, 132.38f, 764.81f), Quaternion.Euler(10,180,0));
         // Instantiate(AccelPoint_ogura,new Vector3(-582.981f, 133.4f, 772.13f), Quaternion.Euler(0,180,0));
-        Instantiate(AccelPoint_shortcut,new Vector3(-582.981f, 133.4f, 772.13f), Quaternion.Euler(10,180,0));
-        Instantiate(AccelPoint_ogura,new Vector3(-582.81f, 132.38f, 764.81f), Quaternion.Euler(0,180,0));
-        Instantiate(shortcut,new Vector3(-583.07f, 132.92f, 769.7f), Quaternion.Euler(-10,0,0));
+        Instantiate(AccelPoint_shortcut,new Vector3(-583.07f, 134.46f, 772.26f), Quaternion.Euler(20,180,0));
+        Instantiate(AccelPoint_ogura,new Vector3(-583.33f, 132.38f, 765.2f), Quaternion.Euler(0,180,0));
+        Instantiate(shortcut,new Vector3(-583.22f, 133.52f, 770.05f), Quaternion.Euler(-20,0,0));
+        Instantiate(tunnel,new Vector3(-582.91f, 132.46f, 762.09f), Quaternion.Euler(-90,0,0));
+        // Instantiate(wall_shortcut_L,new Vector3(-585.62f, 131.61f, 758.85f), Quaternion.Euler(0,0,-20));
         yield return new WaitForSeconds(4);
         SetMatColor2(node_id9_1, new Color32(0,0,0,255));
         SetMatColor2(node_id9_2, new Color32(0,0,0,255));
