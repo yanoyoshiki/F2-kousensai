@@ -94,6 +94,7 @@ public class PlayerController : MonoBehaviour
         if (lap != 4)
         {
             TotalTimeText.text = TotalText + minute.ToString("00") + ":" + ((int)seconds).ToString("00");
+
         }
 
         if (lap == 0 || lap == 1)
@@ -176,7 +177,32 @@ public class PlayerController : MonoBehaviour
             lap++;
             //関数呼び出してゴール表記を作る
             goal.goalcheck();
+            Stop();
         }
         //何周目かを管理
     }
+
+    void Stop()
+    {
+        //ゴール時点での記録を保存して関数で別に渡してまとめてもらう
+        string TimeRecord = minute.ToString("00") + ":" + ((int)seconds).ToString("00");
+        float rank = this.GetComponent<Car2>().ranknum;
+        float playernumber = 1; //割り当てるプレイヤーごとに１～４で変更する
+        float S = minute * 60 + seconds;
+        GameObject goalscript = GameObject.FindWithTag("Goal");
+        goalscript.GetComponent<Goal>().record(playernumber,rank,TimeRecord,S);
+        StartCoroutine("Inoperable", 2f); // 2秒処理停止
+        //邪魔にならないように車を消すか移動させる処理をここに
+
+    }
+
+    /*
+    １位　プレイヤー２　タイム
+    ３位　プレイヤー４　タイム
+    ４位　プレイヤー１　タイム
+    ７位　プレイヤー３　タイム
+
+     */
+
+
 }

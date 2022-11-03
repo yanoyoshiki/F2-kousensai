@@ -17,7 +17,9 @@ public class Car2 : MonoBehaviour
     //GameObject wrongWay;
 
     [SerializeField]
-    Text rank;
+    public Text rank;
+
+    public float ranknum;
 
     float speed;
 
@@ -68,6 +70,12 @@ public class Car2 : MonoBehaviour
 
     public void SetRank(int rank)
     {
-        this.rank.text = $"#{rank + 1}";
+        this.rank.text = $"{rank + 1}ˆÊ";
+        ranknumSave(rank);
+    }
+
+    void ranknumSave(int num)
+    {
+        ranknum = num;
     }
 }

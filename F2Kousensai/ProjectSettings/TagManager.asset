@@ -10,6 +10,7 @@ TagManager:
   - NPC
   - Player3
   - Player4
+  - Goal
   layers:
   - Default
   - TransparentFX

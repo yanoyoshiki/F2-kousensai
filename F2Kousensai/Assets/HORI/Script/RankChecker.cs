@@ -83,10 +83,10 @@ public class RankChecker : MonoBehaviour
                 float x = P2InstancePoint.position.x;
                 float y = P2InstancePoint.position.y;
                 float z = P2InstancePoint.position.z;
-                Vector3 point1 = new Vector3(x, y, z);
+                Vector3 point2 = new Vector3(x, y, z);
                 Quaternion myRotation = P2InstancePoint.rotation;
                 A = GameObject.FindWithTag("Player2");
-                A.transform.position = point1;
+                A.transform.position = point2;
                 A.transform.rotation = myRotation;
 
                 carList.Add(car); //順位を確認するためのリストに生成した車を放りこんでる
@@ -98,10 +98,10 @@ public class RankChecker : MonoBehaviour
                 float x = P3InstancePoint.position.x;
                 float y = P3InstancePoint.position.y;
                 float z = P3InstancePoint.position.z;
-                Vector3 point1 = new Vector3(x, y, z);
+                Vector3 point3 = new Vector3(x, y, z);
                 Quaternion myRotation = P3InstancePoint.rotation;
                 A = GameObject.FindWithTag("Player3");
-                A.transform.position = point1;
+                A.transform.position = point3;
                 A.transform.rotation = myRotation;
 
                 carList.Add(car); //順位を確認するためのリストに生成した車を放りこんでる
@@ -113,10 +113,10 @@ public class RankChecker : MonoBehaviour
                 float x = P4InstancePoint.position.x;
                 float y = P4InstancePoint.position.y;
                 float z = P4InstancePoint.position.z;
-                Vector3 point1 = new Vector3(x, y, z);
+                Vector3 point4 = new Vector3(x, y, z);
                 Quaternion myRotation = P4InstancePoint.rotation;
                 A = GameObject.FindWithTag("Player4");
-                A.transform.position = point1;
+                A.transform.position = point4;
                 A.transform.rotation = myRotation;
                 carList.Add(car); //順位を確認するためのリストに生成した車を放りこんでる
             }
@@ -142,6 +142,7 @@ public class RankChecker : MonoBehaviour
             }
 
             phase = 1;
+            Debug.Log("phase:"+phase);
         }
         else if (phase == 1)
         {

@@ -80,6 +80,7 @@
     <Compile Include="Assets\HORI\Script\Player\GameStart4.cs" />
     <Compile Include="Assets\HORI\Script\NPCSpeedCheck.cs" />
     <Compile Include="Assets\HORI\Script\CarInstance.cs" />
+    <Compile Include="Assets\HORI\Script\Player\Car2.cs" />
     <Compile Include="Assets\HORI\Script\RankAlgorithm.cs" />
     <Compile Include="Assets\HORI\Script\CheckPoint.cs" />
     <Compile Include="Assets\HORI\Script\Player\GameStart3.cs" />
@@ -89,7 +90,10 @@
     <Compile Include="Assets\HORI\Script\ChangeScene.cs" />
     <Compile Include="Assets\HORI\Script\GoalControl.cs" />
     <Compile Include="Assets\HORI\Script\Player\RankingCheckCar1.cs" />
-    <Compile Include="Assets\HORI\Script\Player\Car2.cs" />
+    <Compile Include="Assets\HORI\Script\Goal.cs" />
+    <Compile Include="Assets\HORI\Script\Player\PlayerController2.cs" />
+    <Compile Include="Assets\HORI\Script\Player\PlayerController3.cs" />
+    <Compile Include="Assets\HORI\Script\Player\PlayerController4.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\HORI\Asset\race-track-lake\readmore.txt" />

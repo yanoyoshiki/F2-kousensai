@@ -71,8 +71,24 @@ public class carScript2 : MonoBehaviour
 
     public void FixedUpdate()
     {
-        motor = maxMotorTorque * Input.GetAxis("Vertical");
-        steering = maxSteeringAngle * Input.GetAxis("Horizontal");
+        if (Input.GetKey(KeyCode.UpArrow))
+        {
+            motor = maxMotorTorque * 1;
+        }
+        if (Input.GetKey(KeyCode.DownArrow))
+        {
+            motor = maxMotorTorque * (-1);
+        }
+        if (Input.GetKey(KeyCode.LeftArrow))
+        {
+            steering = maxSteeringAngle*1;
+        }
+        if (Input.GetKey(KeyCode.RightArrow))
+        {
+            steering = maxSteeringAngle*(-1);
+        }
+        //motor = maxMotorTorque * Input.GetAxis("Vertical");
+        //steering = maxSteeringAngle * Input.GetAxis("Horizontal");
 
         foreach (AxleInfo axleInfo in axleInfos)
         {
