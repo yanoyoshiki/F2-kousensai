@@ -10,8 +10,8 @@ public class banana_destroy : MonoBehaviour
     void Start()
     {
         rend = GetComponent<Renderer>();
-        IEnumerator defeat = Defeat();
-        StartCoroutine(defeat);
+        // IEnumerator defeat = Defeat();
+        // StartCoroutine(defeat);
     }
     private void OnTriggerEnter(Collider other){
         Vector3 center = rend.bounds.center;
@@ -30,18 +30,21 @@ public class banana_destroy : MonoBehaviour
                 360 / _period * Time.deltaTime
             );
         }
-        // IEnumerator defeat = Defeat();
-        // StartCoroutine(defeat);
+        IEnumerator defeat = Defeat();
+        StartCoroutine(defeat);
     }
         
     IEnumerator Defeat() {
-        yield return new WaitForSeconds(10);
-        Destroy (gameObject);
+        yield return new WaitForSeconds(1);
+        // Destroy (gameObject);
+        this.gameObject.SetActive (false);
     }
-
     // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    // void Update()
+    // {
+    //     if(this.gameObject.activeSelf){
+    //         IEnumerator defeat = Defeat();
+    //         StartCoroutine(defeat);
+    //     }
+    // }
 }

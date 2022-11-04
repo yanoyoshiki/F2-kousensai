@@ -12,7 +12,8 @@ public class AccelPoint_ogura : MonoBehaviour
     }
     IEnumerator Defeat() {
         yield return new WaitForSeconds(4);
-        Destroy (gameObject);
+        // Destroy (gameObject);
+        this.gameObject.SetActive (false);
     }
     
     private void OnTriggerEnter(Collider other)

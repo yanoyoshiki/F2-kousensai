@@ -15,9 +15,9 @@ public class Bulldozer : MonoBehaviour {
     }
 
     // 当たった時に呼ばれる関数
-    void OnCollisionEnter(Collision collision)
-    {
-        Debug.Log("Hit"); // ログを表示する
-    }
+    // void OnCollisionEnter(Collision collision)
+    // {
+    //     Debug.Log("Hit"); // ログを表示する
+    // }
 
 }

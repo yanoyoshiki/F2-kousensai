@@ -12,7 +12,8 @@ public class shortcut : MonoBehaviour
     }
     IEnumerator Defeat() {
         yield return new WaitForSeconds(4);
-        Destroy (gameObject);
+        // Destroy (gameObject);
+        this.gameObject.SetActive (false);
     }
 
     // Update is called once per frame

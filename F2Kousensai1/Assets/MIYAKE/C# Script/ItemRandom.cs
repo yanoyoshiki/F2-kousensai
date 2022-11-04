@@ -15,7 +15,7 @@ public class ItemRandom : MonoBehaviour
     public GameObject AccelPoint_shortcut;
     public GameObject AccelPoint_ogura;
     public GameObject shortcut;
-    public GameObject Obstacle;
+    public GameObject Crystal;
     // public float nowPosi;
     // Start is called before the first frame update
 
@@ -60,15 +60,20 @@ public class ItemRandom : MonoBehaviour
             other.gameObject.GetComponent<Rigidbody>().AddRelativeForce(new Vector3(0, 0, 10), ForceMode.VelocityChange);
         }
         else if(a[r1]=="バナナ"){
-            Instantiate(banana,new Vector3(15.4f, -8.56f, -5.5f), Quaternion.identity);   // バナナを出現
+            // Instantiate(banana,new Vector3(15.4f, -8.56f, -5.5f), Quaternion.identity);   // バナナを出現
+            banana.SetActive (true);
         }
         else if(a[r1]=="ショートカット"){
-            Instantiate(AccelPoint_shortcut,new Vector3(17.73f, -7.82f, -12.1f), Quaternion.Euler(10,230,0));
-            Instantiate(AccelPoint_ogura,new Vector3(12.24f, -8.76f, -17.19f), Quaternion.Euler(0,230,0));
-            Instantiate(shortcut,new Vector3(15.76f, -8.36f, -13.8f), Quaternion.Euler(-10,50,0));
+            // Instantiate(AccelPoint_shortcut,new Vector3(17.73f, -7.82f, -12.1f), Quaternion.Euler(10,230,0));
+            // Instantiate(AccelPoint_ogura,new Vector3(12.24f, -8.76f, -17.19f), Quaternion.Euler(0,230,0));
+            // Instantiate(shortcut,new Vector3(15.76f, -8.36f, -13.8f), Quaternion.Euler(-10,50,0));
+            AccelPoint_shortcut.SetActive(true);
+            AccelPoint_ogura.SetActive(true);
+            shortcut.SetActive(true);
         }
         else if(a[r1]=="障害物"){
-            Instantiate(Obstacle,new Vector3(22.83f, -8.19f, -3.25f), Quaternion.Euler(0,-30,0));
+            // Instantiate(Obstacle,new Vector3(22.83f, -8.19f, -3.25f), Quaternion.Euler(0,-30,0));
+            Crystal.SetActive (true);
         }
         StartCoroutine(defeat);
 
