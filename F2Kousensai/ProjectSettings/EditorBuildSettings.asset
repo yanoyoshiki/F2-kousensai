@@ -15,6 +15,21 @@ EditorBuildSettings:
     path: Assets/HORI/Scene/HORI_1.unity
     guid: 205292efe96dc224e96ea23b3249ecb7
   - enabled: 1
-    path: Assets/ASAI/result.unity
+    path: Assets/ASAI/Race_ranking.unity
     guid: 704b97b9b3bf52c46acea0c185a4c214
+  - enabled: 1
+    path: Assets/ASAI/player1_insert_name.unity
+    guid: ed8bccf5199d6e440a2b58abcdf525d9
+  - enabled: 1
+    path: Assets/ASAI/player2_insert_name.unity
+    guid: 6c0b55769eb23364db8a7b90bbf9327e
+  - enabled: 1
+    path: Assets/ASAI/player3_insert_name.unity
+    guid: 9a17ee16702ae1241983a325938397f3
+  - enabled: 1
+    path: Assets/ASAI/player4_insert_name.unity
+    guid: 8dda38e3d5f5f5943a46d8a1b7130acc
+  - enabled: 1
+    path: Assets/ASAI/Best_time.unity
+    guid: 5c32b5751f036574dacee4b7cdd0057e
   m_configObjects: {}

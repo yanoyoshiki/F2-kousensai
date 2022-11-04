@@ -55,6 +55,7 @@
      <Compile Include="Assets\HORI\Script\Player\ShowGoal.cs" />
      <Compile Include="Assets\HORI\Script\FlagManager.cs" />
      <Compile Include="Assets\HORI\Asset\race-track-lake\Standard Assets\Environment\Water (Basic)\Scripts\WaterBasic.cs" />
+     <Compile Include="Assets\ASAI\RESULT1.cs" />
      <Compile Include="Assets\HORI\Asset\RankingAssets\Scripts\Car.cs" />
      <Compile Include="Assets\HORI\Script\Player\carScript3.cs" />
      <Compile Include="Assets\HORI\Script\SelfDrivingScript.cs" />
@@ -71,8 +72,10 @@
      <Compile Include="Assets\HORI\Script\NPCSpeedCheck.cs" />
      <Compile Include="Assets\HORI\Script\CarInstance.cs" />
      <Compile Include="Assets\HORI\Script\RankAlgorithm.cs" />
+     <Compile Include="Assets\ASAI\test.cs" />
      <Compile Include="Assets\HORI\Asset\RankingAssets\Scripts\CheckPoint.cs" />
      <Compile Include="Assets\HORI\Script\Player\GameStart3.cs" />
+     <Compile Include="Assets\ASAI\RESULT2.cs" />
      <Compile Include="Assets\HORI\Script\Player\OutputCarSpeed4.cs" />
      <Compile Include="Assets\HORI\Script\Player\GameStart2.cs" />
      <Compile Include="Assets\HORI\Script\Player\OutputCarSpeed2.cs" />
