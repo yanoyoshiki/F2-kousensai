@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1280
     height: 638
   m_ShowMode: 4
-  m_Title: Project
+  m_Title: Hierarchy
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 679, y: 492}
   m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
-  controlID: 139
+  controlID: 135
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -227,7 +227,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 66
+  controlID: 61
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -252,7 +252,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 67
+  controlID: 62
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -343,22 +343,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/OGURA/asset/prefab
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets
+  - Assets/OGURA/asset/prefab
   m_LastFoldersGridSize: -1
   m_LastProjectPath: "C:\\Users\\hiwin\\OneDrive\\\u30C9\u30AD\u30E5\u30E1\u30F3\u30C8\\GitHub\\F2-kousensai\\F2Kousensai"
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 3c4b0000
-    m_LastClickedID: 19260
-    m_ExpandedIDs: 000000003c4b0000684b0000724b000000ca9a3b
+    m_SelectedIDs: 924b0000
+    m_LastClickedID: 19346
+    m_ExpandedIDs: 000000006a4b00008a4b0000944b000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -386,7 +386,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000003c4b0000
+    m_ExpandedIDs: 000000006a4b0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -413,7 +413,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c6230000b4830000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -474,7 +474,7 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 0
+  m_LastVerticalScrollValue: 224
   m_GlobalObjectId: 
   m_LockTracker:
     m_IsLocked: 0
@@ -506,10 +506,10 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: 70fbffff
+      scrollPos: {x: 0, y: 313.5}
+      m_SelectedIDs: 04f4ffff
+      m_LastClickedID: -3068
+      m_ExpandedIDs: 04f4ffff08f4ffff70fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -569,9 +569,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -585.1992, y: 131.63913, z: 761.6884}
+    m_Target: {x: -581.4913, y: 129.44939, z: 771.5013}
     speed: 2
-    m_Value: {x: -585.1992, y: 131.63913, z: 761.6884}
+    m_Value: {x: -581.4913, y: 129.44939, z: 771.5013}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -618,13 +618,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.04737925, y: -0.007491711, z: 0.00035594858, w: 0.99885297}
+    m_Target: {x: 0.19904232, y: -0.013229467, z: 0.0026874046, w: 0.9799026}
     speed: 2
-    m_Value: {x: -0.04737925, y: 0.007491711, z: -0.00035594855, w: -0.99885297}
+    m_Value: {x: -0.19904232, y: 0.013229467, z: -0.0026874044, w: -0.9799026}
   m_Size:
-    m_Target: 163.08005
+    m_Target: 27.459412
     speed: 2
-    m_Value: 163.08005
+    m_Value: 27.459412
   m_Ortho:
     m_Target: 1
     speed: 2

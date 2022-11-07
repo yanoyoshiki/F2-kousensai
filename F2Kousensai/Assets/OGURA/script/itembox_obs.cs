@@ -30,7 +30,8 @@ public class itembox_obs : MonoBehaviour
         SetMatColor1(node_id9_1, new Color32(0,0,0,255));
         SetMatColor1(node_id9_2, new Color32(0,0,0,255));
         SetMatColor1(node_id9_3, new Color32(0,0,0,255));
-        Instantiate(obstacle,new Vector3(-582.981f, 133.4f, 772.13f), Quaternion.Euler(10,180,0));
+        // Instantiate(obstacle,new Vector3(-582.981f, 133.4f, 772.13f), Quaternion.Euler(10,180,0));
+        obstacle.SetActive (true);
         yield return new WaitForSeconds(4);
         SetMatColor2(node_id9_1, new Color32(0,0,0,255));
         SetMatColor2(node_id9_2, new Color32(0,0,0,255));
